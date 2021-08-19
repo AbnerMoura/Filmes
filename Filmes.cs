@@ -1,4 +1,4 @@
-﻿using Filmes;
+using Filmes;
 using System;
 
 namespace Filmes
@@ -52,14 +52,14 @@ namespace Filmes
 			repositorio.Exclui(indiceSerie);
 		}
 
-        private static void VisualizarSerie()
+        private static void Visualizarfilmes()
 		{
 			Console.Write("Digite o id da filme: ");
 			int indiceSerie = int.Parse(Console.ReadLine());
 
 			var serie = repositorio.RetornaPorId(indiceSerie);
 
-			Console.WriteLine(serie);
+			Console.WriteLine(filme);
 		}
 
         private static void Atualizarfilme()
@@ -153,7 +153,7 @@ namespace Filmes
 
 			Console.WriteLine("1- Listar filmes");
 			Console.WriteLine("2- Inserir nova filme");
-			Console.WriteLine("3- Atualizar filmes");
+			Console.WriteLine("3- Atualizar filme");
 			Console.WriteLine("4- Excluir filme");
 			Console.WriteLine("5- Visualizar filmes");
 			Console.WriteLine("C- Limpar Tela");
